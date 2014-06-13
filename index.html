@@ -1,0 +1,164 @@
+<html>
+
+<head>
+    <TITLE>Pong Hub</TITLE>
+    <LINK rel="stylesheet" href="static/css/index.css" type="TEXT/CSS">
+    <link rel="icon" type="image/ico" href="http://www.ponghub.com/favicon.ico"/>
+</head>
+
+<body>
+	<div class="splash_container">
+		<div class="container">
+			<div class="logo">
+			</div>
+			<div class="signup_container">
+				<div class="asterick">
+					*
+				</div>
+				<div class="btn_white">
+					REGISTER
+				</div>
+				<div class="btn_white">
+					LOGIN
+				</div>
+				<br />
+				<div class="notification">
+					* Not currently accepting new users.
+				</div>
+			</div>
+		</div>
+		<div class="pong_container">
+			<div class="container">
+				<a href="#team">
+					<div id="team_cup" class="pong_balls team">
+					</div>
+				</a>
+				<a href="#app">
+					<div id="app_cup" class="pong_balls app">
+					</div>
+				</a>
+				<a href="#store">
+					<div id="store_cup" class="pong_balls store">
+					</div>
+				</a>
+				<a href="#about">
+					<div id="about_cup" class="pong_balls about">
+					</div>
+				</a>
+			</div>
+			<div class="cup_container">
+				<div id="team_cup_top" class="cup_top">
+				</div>
+				<div id="app_cup_top" class="app_cup cup_top">
+				</div>
+				<div id="store_cup_top" class="store_cup cup_top">
+				</div>
+				<div id="about_cup_top" class="about_cup cup_top">
+				</div>
+			</div>
+		</div>
+		<div class="cup_container_bottom">
+				<div>
+					<div id="team_cup_bottom" class="cup_bottom">
+					</div>
+				</div>
+				<div>
+					<div id="app_cup_bottom" class="app_cup cup_bottom">
+					</div>
+				</div>
+				<div>
+					<div id="store_cup_bottom" class="store_cup cup_bottom">
+					</div>
+				</div>
+				<div>
+					<div id="about_cup_bottom" class="about_cup cup_bottom">
+					</div>
+				</div>
+		</div>
+<div class="test"></div>
+<div id="team"></div>
+
+	</div>
+</body>
+
+
+<script type="text/javascript" src="static/js/jquery-1.7.2.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+	    $('a[href^="#"]').click(function(e) {
+	        e.preventDefault();
+	        var target = this.hash, $target = $(target);
+	        $('html, body').stop().animate({
+	            'scrollTop': $target.offset().top
+	        }, 2000, 'swing', function() {
+	            window.location.hash = target;
+	        });
+	    });
+	});
+</script>
+
+<script type="text/javascript">
+	function cupShowHide() {
+
+			var cuptop = this.id
+			cuptop += '_top';
+			var cupbottom = this.id
+			cupbottom += '_bottom';
+
+	        $(".cup_top").hide();
+	        $(".cup_bottom").hide();
+	        $('#'+cuptop).fadeIn();
+	        $('#'+cupbottom).fadeIn();
+	}
+	$("#team_cup").mouseenter(cupShowHide);
+	$("#app_cup").mouseenter(cupShowHide);
+	$("#store_cup").mouseenter(cupShowHide);
+	$("#about_cup").mouseenter(cupShowHide);
+
+	function cupClick() {
+	        $(this).animate({'marginTop': '100px'}, 500).delay(500).animate({'marginTop': '0px'}, 500);
+	}
+	$("#team_cup").click(cupClick);
+	$("#app_cup").click(cupClick);
+	$("#store_cup").click(cupClick);
+	$("#about_cup").click(cupClick);
+
+
+
+	$("#team_cup").hover(
+		function () {
+		        $(this).animate({'marginTop': '-20px'}, 100);
+		},
+		function () {
+		        $(this).animate({'marginTop': '0px'}, 500);
+		}
+	);
+	$("#app_cup").hover(
+		function () {
+		        $(this).animate({'marginTop': '-20px'}, 100);
+		},
+		function () {
+		        $(this).animate({'marginTop': '0px'}, 500);
+		}
+	);
+	$("#store_cup").hover(
+		function () {
+		        $(this).animate({'marginTop': '-20px'}, 100);
+		},
+		function () {
+		        $(this).animate({'marginTop': '0px'}, 500);
+		}
+	);
+	$("#about_cup").hover(
+		function () {
+		        $(this).animate({'marginTop': '-20px'}, 100);
+		},
+		function () {
+		        $(this).animate({'marginTop': '0px'}, 500);
+		}
+	);
+
+
+</script>
+

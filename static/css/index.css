@@ -1,0 +1,177 @@
+/* Main */
+
+body {
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+    background-color: #f5f2d0;
+}
+
+/* Font Families */
+
+@font-face {
+    font-family: 'LatoLight';
+    src: url('../fonts/Lato-Light.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Lato-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Lato-Light.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Lato-Light.ttf') format('truetype'); 
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Bold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Lato-Bold.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Lato-Bold.ttf') format('truetype'); 
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+/* Containers */
+
+.container {
+	margin:0px auto;
+	width: 600px;
+}
+
+.splash_container {
+	padding-top:100px;
+	height: 457px;
+	background-color: #95c68d;
+}
+
+.signup_container {
+	margin-top:50px;
+}
+
+.pong_container {
+	margin-top: 80px;
+	height:120px;
+	background-color: #bedab6;
+	padding-top:30px;
+}
+
+.cup_container {
+	margin:0px auto;
+	margin-top:68px;
+	width: 720px;
+}
+.cup_container_bottom {
+	margin:0px auto;
+	width: 720px;
+}
+
+/* Logos */
+
+.logo {
+	height: 90px;
+	width: 422px;
+	margin:0px auto;
+	background-image: url(../images/logo_large.png);
+}
+
+/* Buttons */
+
+.btn_white {
+	width: 133px;
+	padding: 3px 0 5px 10px;
+	background-image: url(../images/btn_white.png);
+	color: #95c68d;
+	font-family: LatoLight, sans-serif;
+	float: right;
+	margin:0 10px 0 20px;
+	cursor: pointer;
+}
+
+.btn_white:hover {
+	background-position: 0 -32px;
+}
+
+/* Section 1 */
+
+.asterick {
+	color: #ffffff;
+	font-family: Lato, sans-serif;
+	font-size: 45px;
+	float: right;
+	margin-right:60px;
+}
+
+.notification {
+	color: #ffffff;
+	font-family: LatoLight, sans-serif;
+	font-size: 12px;
+	float: right;
+	clear:both;
+	margin:-10px 60px 0 0;
+}
+
+.pong_balls {
+	height:82px;
+	width:82px;
+	margin-right:90px;
+	background-image: url(../images/pong_balls.png);
+	float: left;
+	cursor: pointer;
+	z-index: 5;
+}
+
+.app {
+	background-position: -82px 0;
+}
+.store {
+	background-position: -164px 0;
+}
+.about {
+	background-position: -246px 0;
+	margin-right:0px;
+}
+
+.cup_top {
+	height:52px;
+	width:205px;
+	display: none;
+	background-image: url(../images/cup_top.png);
+	z-index: 1;
+}
+.cup_bottom {
+	height:64px;
+	width:205px;
+	display: none;
+	background-image: url(../images/cup_bottom.png);
+	z-index: 10;
+	position: relative;
+}
+.app_cup {
+	margin-left: 170px;
+}
+.store_cup {
+	margin-left: 340px;
+}
+.about_cup {
+	margin-left: 520px;
+}
+
+
+.test {
+	height:1000px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
