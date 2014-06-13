@@ -12,18 +12,18 @@
 			<div class="logo">
 			</div>
 			<div class="signup_container">
-				<div class="asterick">
-					*
+				<div class="btn_white" style="margin-right:90px;">
+					LOGIN
 				</div>
-				<div class="btn_white">
+				<div id="register" class="btn_white">
 					REGISTER
 				</div>
-				<div class="btn_white">
-					LOGIN
+				<div id="asterick" class="asterick">
+					*
 				</div>
 				<br />
 				<div class="notification">
-					* Not currently accepting new users.
+					<span id="asterick1">*</span> Not currently accepting new users, but we will be soon!
 				</div>
 			</div>
 		</div>
@@ -124,6 +124,15 @@
 	        });
 	    });
 	});
+</script>
+
+<script type="text/javascript">
+	function squirm() {
+			$(this).animate({'marginRight':'20px'}, 50).animate({'marginRight':'0px'}, 50).animate({'marginRight':'20px'}, 50).animate({'marginRight':'10px'}, 50);
+			$("#asterick").css("color","#f7941e");
+			$("#asterick1").css("color","#f7941e");
+	}
+	$("#register").mouseenter(squirm);
 </script>
 
 <script type="text/javascript">
