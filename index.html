@@ -127,12 +127,20 @@
 </script>
 
 <script type="text/javascript">
-	function squirm() {
+	$("#register").mouseenter(
+		function () {
 			$(this).animate({'marginRight':'20px'}, 50).animate({'marginRight':'0px'}, 50).animate({'marginRight':'20px'}, 50).animate({'marginRight':'10px'}, 50);
 			$("#asterick").css("color","#f7941e");
 			$("#asterick1").css("color","#f7941e");
-	}
-	$("#register").mouseenter(squirm);
+		}
+	);
+
+	$("#register").mouseleave(
+		function () {
+			$("#asterick").css("color","#ffffff");
+			$("#asterick1").css("color","#ffffff");
+		}
+	);
 </script>
 
 <script type="text/javascript">
