@@ -75,9 +75,37 @@
 					</div>
 				</div>
 		</div>
-<div class="test"></div>
-<div id="team"></div>
-
+	</div>
+	<div id="team" class="teamd divider">
+	</div>
+	<div class="section_container">
+		<h4>Our team of experienced professionsals strives to make your beer pong experience as sloppy and social as possible.</h4>
+		<div id="sean" class="photos sean">
+		</div>
+		<div id="daniel" class="photos daniel">
+		</div>
+		<div id="guru" class="photos guru">
+		</div>
+	</div>
+	<div class="section_container">
+		<h1>
+			<span id="sean_name" class="about_name">SEAN PRYOR</span>
+			<span id="daniel_name" class="about_name">DANIEL CRUZ</span>
+			<span id="guru_name" class="about_name" style="margin-right:0px;">GURU KOTTA</span>
+		</h1>
+		<div id="sean_about" class="about_text">
+			<h4>Co-Founder. Sucks at pong. Designs good. Pretends to code.</h4>
+		</div>
+		<div id="daniel_about" class="about_text">
+			<h4>Co-Founder. Likes to jump over things, and does so really fucking well.</h4>
+		</div>
+		<div id="guru_about" class="about_text">
+			<h4>Co-Founder. Vegan. Anti-gluten. Facebook model.</h4>
+		</div>
+	</div>
+	<div id="app" class="appd divider">
+	</div>
+	<div class="test">
 	</div>
 </body>
 
@@ -124,8 +152,6 @@
 	$("#store_cup").click(cupClick);
 	$("#about_cup").click(cupClick);
 
-
-
 	$("#team_cup").hover(
 		function () {
 		        $(this).animate({'marginTop': '-20px'}, 100);
@@ -158,7 +184,22 @@
 		        $(this).animate({'marginTop': '0px'}, 500);
 		}
 	);
-
-
 </script>
 
+<script type="text/javascript">
+	function aboutShow() {
+
+			var name = this.id
+			name += '_name';
+			var about = this.id
+			about += '_about';
+
+	        $(".about_text").hide();
+	        $(".about_name").css("color","#95c68d");
+	        $('#'+about).show();
+	        $('#'+name).css("color","#000000");
+	}
+	$("#sean").mouseenter(aboutShow);
+	$("#daniel").mouseenter(aboutShow);
+	$("#guru").mouseenter(aboutShow);
+</script>

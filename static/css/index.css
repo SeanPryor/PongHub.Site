@@ -6,6 +6,19 @@ body {
     margin: 0px;
     background-color: #f5f2d0;
 }
+h1 {
+	font-family: Lato, sans-serif;
+	font-size: 18px;
+	color: #95c68d;
+	margin-top: 200px;
+}
+h4 {
+	font-family: LatoLight, sans-serif;
+	font-size: 14px;
+}
+.test {
+	height:1000px;
+}
 
 /* Font Families */
 
@@ -63,6 +76,11 @@ body {
 	margin:0px auto;
 	width: 720px;
 }
+.section_container {
+	margin:0px auto;
+	width: 600px;
+	margin-top:30px;
+}
 
 /* Logos */
 
@@ -73,7 +91,7 @@ body {
 	background-image: url(../images/logo_large.png);
 }
 
-/* Buttons */
+/* Buttons/Misc */
 
 .btn_white {
 	width: 133px;
@@ -88,6 +106,13 @@ body {
 
 .btn_white:hover {
 	background-position: 0 -32px;
+}
+.divider {
+	height:82px;
+	width: 809px;
+	margin:0 auto;
+	clear: both;
+	margin-top: 50px;
 }
 
 /* Section 1 */
@@ -155,18 +180,46 @@ body {
 	margin-left: 520px;
 }
 
+/* Section 2 */
 
-.test {
-	height:1000px;
+.teamd {
+	background-image: url(../images/divider_team.png);
 }
 
+.photos {
+	height: 136px;
+	width: 136px;
+	background-image: url(../images/team_photos.png);
+	margin: 30px 96px 0 0;
+	float: left;
+}
 
+.daniel {
+	background-position: -136px 0;
+}
 
+.guru {
+	background-position: -272px 0;
+	margin-right: 0px;
+}
 
+.sean:hover { background-position: 0 -136px;}
+.daniel:hover { background-position: -136px -136px;}
+.guru:hover { background-position: -272px -136px;}
 
+.about_name {
+	margin-right: 115px;
+}
 
+.about_text {
+	display: none;
+}
 
+/* Section 3 */
 
+.appd {
+	background-image: url(../images/divider_app.png);
+}
 
 
 
