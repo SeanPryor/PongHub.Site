@@ -30,8 +30,9 @@ h5 {
 	font-size: 20px;
 	color:#ffffff;
 }
-.test {
-	height:200px;
+a {
+	color: #ffffff;
+	text-decoration: none;
 }
 
 /* Font Families */
