@@ -8,16 +8,30 @@ body {
 }
 h1 {
 	font-family: Lato, sans-serif;
+	font-size: 25px;
+	color: #95c68d;
+}
+h2 {
+	font-family: Lato, sans-serif;
 	font-size: 18px;
 	color: #95c68d;
-	margin-top: 200px;
+}
+h3 {
+	font-family: LatoLight, sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
 }
 h4 {
 	font-family: LatoLight, sans-serif;
 	font-size: 14px;
 }
+h5 {
+	font-family: LatoLight, sans-serif;
+	font-size: 20px;
+	color:#ffffff;
+}
 .test {
-	height:1000px;
+	height:200px;
 }
 
 /* Font Families */
@@ -80,6 +94,11 @@ h4 {
 	margin:0px auto;
 	width: 600px;
 	margin-top:30px;
+	clear: both;
+}
+.footer_container {
+	height: 120px;
+	background-color: #000000;
 }
 
 /* Logos */
@@ -90,12 +109,19 @@ h4 {
 	margin:0px auto;
 	background-image: url(../images/logo_large.png);
 }
+.logo_med {
+	height: 48px;
+	width: 228px;
+	background-image: url(../images/logo_med.png);
+	float: left;
+	margin:40px 0 0 30px;
+}
 
 /* Buttons/Misc */
 
 .btn_white {
-	width: 133px;
-	padding: 3px 0 5px 10px;
+	width: 132px;
+	padding: 3px 0 4px 10px;
 	background-image: url(../images/btn_white.png);
 	color: #95c68d;
 	font-family: LatoLight, sans-serif;
@@ -135,8 +161,8 @@ h4 {
 
 .pong_balls {
 	height:82px;
-	width:82px;
-	margin-right:90px;
+	width:83px;
+	margin-right:89px;
 	background-image: url(../images/pong_balls.png);
 	float: left;
 	cursor: pointer;
@@ -147,10 +173,10 @@ h4 {
 	background-position: -82px 0;
 }
 .store {
-	background-position: -164px 0;
+	background-position: -165px 0;
 }
 .about {
-	background-position: -246px 0;
+	background-position: -248px 0;
 	margin-right:0px;
 }
 
@@ -220,10 +246,71 @@ h4 {
 	background-image: url(../images/divider_app.png);
 }
 
+.phone {
+	height: 333px;
+	width: 194px;
+	float: left;
+}
+.stats {
+	background-image: url(../images/phone_stats.png);
+}
+.compare {
+	background-image: url(../images/phone_compare.png);
+}
+.award {
+	background-image: url(../images/phone_award.png);
+}
+.app_copy {
+	float:left;
+	margin-left: 20px;
+}
+.appstore_soon {
+	width:161px;
+	height: 73px;
+	background-image: url(../images/appstore_button_soon.png);
+	float: left;
+	margin-top:50px;
+}
+.dots {
+	height: 20px;
+	width: 20px;
+	margin: 10px 10px 0 0;
+	background-image: url(../images/dots.png);
+	float: left;
+	cursor: pointer;
+}
+.selected {
+	background-position: -23px 0;
+}
 
+/* Section 4 */
 
+.stored {
+	background-image: url(../images/divider_store.png);
+}
+.store_placeholder {
+	height:222px;
+	width:649px;
+	margin:0 auto;
+	background-image: url(../images/store_soon.png);
+	background-position: 0px 0;
+}
 
+/* Section 5 */
 
+.aboutd {
+	background-image: url(../images/divider_about.png);
+}
 
+/* Footer */
+
+.footer_links {
+	float: right;
+	margin:20px 30px 0 0;
+}
+.links_spacing {
+	margin: 0 10px 0 10px;
+	cursor: pointer;
+}
 
 

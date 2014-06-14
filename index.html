@@ -7,9 +7,10 @@
 </head>
 
 <body>
+	<span id="anchor_top"></span>
 	<div class="splash_container">
 		<div class="container">
-			<div class="logo">
+			<div id="logo" class="logo">
 			</div>
 			<div class="signup_container">
 				<div class="btn_white" style="margin-right:90px;">
@@ -79,7 +80,7 @@
 	<div id="team" class="teamd divider">
 	</div>
 	<div class="section_container">
-		<h4>Our team of experienced professionsals strives to make your beer pong experience as sloppy and social as possible.</h4>
+		<h4>A team of drunk, inexperienced, idiots working hard to bring unecessary levels of competitiveness to a game you should probably not be playing anyways.</h4>
 		<div id="sean" class="photos sean">
 		</div>
 		<div id="daniel" class="photos daniel">
@@ -88,11 +89,11 @@
 		</div>
 	</div>
 	<div class="section_container">
-		<h1>
+		<h2 style="margin-top: 200px;">
 			<span id="sean_name" class="about_name">SEAN PRYOR</span>
 			<span id="daniel_name" class="about_name">DANIEL CRUZ</span>
 			<span id="guru_name" class="about_name" style="margin-right:0px;">GURU KOTTA</span>
-		</h1>
+		</h2>
 		<div id="sean_about" class="about_text">
 			<h4>Co-Founder. Sucks at pong. Designs good. Pretends to code.</h4>
 		</div>
@@ -105,7 +106,56 @@
 	</div>
 	<div id="app" class="appd divider">
 	</div>
-	<div class="test">
+	<div class="section_container">
+		<h1>APP COMING SOON!</h1>
+		<div id="phone" class="stats phone">
+		</div>
+		<div class="app_copy">
+			<div id="stat_copy" class="copy_hide">
+				<h2>STAT TRACKER</h2>
+				<h3>Track your stats.<br />Other awesome features.<br />It's on a phone!<br />It's coming out for your phone I mean.<br />Soonish!</h3>
+			</div>
+			<div id="compare_copy" class="copy_hide" style="display:none;">
+				<h2>TELL YOUR FRIENDS THEY SUCK</h2>
+				<h3>Because they are terrible at pong.<br />Because they can't drinnk a whole cup.<br />Because they trolled.<br />Because of their general personality.<br />Other stuff!</h3>
+			</div>
+			<div id="award_copy" class="copy_hide" style="display:none;">
+				<h2>SWEET BADGES, BRO</h2>
+				<h3>Collect them and stuff.<br />Show how awesome you are.<br />Win the coveted 'troll' badge.<br />JK, don't troll noob.<br />Haha, you're so trolling.</h3>
+			</div>
+		</div>
+		<div class="appstore_soon">
+		</div>
+	</div>
+	<br />
+	<div class="section_container">
+		<div id="dot_one" class="dots selected" style="margin-left:58px;">
+		</div>
+		<div id="dot_two" class="dots">
+		</div>
+		<div id="dot_three" class="dots">
+		</div>
+	</div>
+	<br />
+	<div id="store" class="stored divider">
+	</div>
+	<br />
+	<div class="store_placeholder">
+	</div>
+	<br />
+	<div id="about" class="aboutd divider">
+	</div>
+	<br /><br />
+	<div class="footer_container">
+		<a href="#anchor_top"><div class="logo_med">
+		</div></a>
+		<div class="footer_links">
+			<h5>
+				<a class="links_spacing">LOGIN</a> // 
+				<a class="links_spacing" style="color:#666666"><strike>REGISTER</strike></a> // 
+				<a class="links_spacing" style="color:#666666"><strike>STORE</strike></a>
+			<h5>
+		</div>
 	</div>
 </body>
 
@@ -119,7 +169,7 @@
 	        var target = this.hash, $target = $(target);
 	        $('html, body').stop().animate({
 	            'scrollTop': $target.offset().top
-	        }, 2000, 'swing', function() {
+	        }, 1000, 'swing', function() {
 	            window.location.hash = target;
 	        });
 	    });
@@ -219,4 +269,37 @@
 	$("#sean").mouseenter(aboutShow);
 	$("#daniel").mouseenter(aboutShow);
 	$("#guru").mouseenter(aboutShow);
+</script>
+
+<script type="text/javascript">
+	$("#dot_one").click(
+		function () {
+		    $(".dots").removeClass("selected");
+	        $(this).addClass("selected");
+	        $("#phone").removeClass("compare award stats");
+	        $("#phone").addClass("stats");
+	        $(".copy_hide").hide();
+	        $("#stat_copy").show();
+		}
+	);
+	$("#dot_two").click(
+		function () {
+		    $(".dots").removeClass("selected");
+	        $(this).addClass("selected");
+	        $("#phone").removeClass("compare award stats");
+	        $("#phone").addClass("compare");
+	        $(".copy_hide").hide();
+	        $("#compare_copy").show();
+		}
+	);
+	$("#dot_three").click(
+		function () {
+		    $(".dots").removeClass("selected");
+	        $(this).addClass("selected");
+	        $("#phone").removeClass("compare award stats");
+	        $("#phone").addClass("award");
+	        $(".copy_hide").hide();
+	        $("#award_copy").show();
+		}
+	);
 </script>
