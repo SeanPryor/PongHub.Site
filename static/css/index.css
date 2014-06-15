@@ -1,10 +1,11 @@
 /* Main */
-
+html {
+	background-color: #f5f2d0;
+}
 body {
     font-size: 20px;
     padding: 0px;
     margin: 0px;
-    background-color: #f5f2d0;
 }
 h1 {
 	font-family: Lato, sans-serif;
@@ -117,12 +118,19 @@ a {
 	float: left;
 	margin:40px 0 0 30px;
 }
+.logo_sm {
+	height: 32px;
+	width: 150px;
+	background-image: url(../images/logo_small.png);
+	float: left;
+	margin:30px 0 0 30px;
+}
 
 /* Buttons/Misc */
 
 .btn_white {
 	width: 132px;
-	padding: 3px 0 4px 10px;
+	padding: 3px 0 5px 10px;
 	background-image: url(../images/btn_white.png);
 	color: #95c68d;
 	font-family: LatoLight, sans-serif;

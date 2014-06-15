@@ -1,0 +1,29 @@
+html { 
+  background: url(../images/background_badneighbors.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Login Box */
+
+input{
+    border: none;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    margin-top: -10px;
+}
+.zamboni {
+	height: 299px;
+	width: 383px;
+	margin:0px auto;
+	margin-top: 100px;
+	background-image: url(../images/zamboni.png);
+	padding: 150px 50px 0 50px;
+}
+.register {
+	float: right;
+	color: #999999;
+}
