@@ -23,7 +23,10 @@
 				<h2>PASSWORD:</h2>
 				<input type="password" name="password" value="" placeholder="Password">
 				<br /><br />
-				<div class="btn_white" style="margin-right:0px;">
+				<div id="error" class="login_error">
+					Sorry, but that doesn't seem right.
+				</div>
+				<div id="login" class="btn_white" style="margin-right:0px;">
 					LOGIN
 				</div>
 				<br />
@@ -41,7 +44,6 @@
 		</div></a>
 		<div class="footer_links">
 			<h5>
-				<a class="links_spacing">LOGIN</a> // 
 				<a class="links_spacing" style="color:#666666"><strike>REGISTER</strike></a> // 
 				<a class="links_spacing" style="color:#666666"><strike>STORE</strike></a> // 
 				<a href="https://www.facebook.com/ponghub" class="links_spacing">FACEBOOK</a>
@@ -49,3 +51,27 @@
 		</div>
 	</div>
 </body>
+
+<script type="text/javascript" src="static/js/jquery-1.7.2.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+	    $('a[href^="#"]').click(function(e) {
+	        e.preventDefault();
+	        var target = this.hash, $target = $(target);
+	        $('html, body').stop().animate({
+	            'scrollTop': $target.offset().top
+	        }, 1000, 'swing', function() {
+	            window.location.hash = target;
+	        });
+	    });
+	});
+</script>
+
+<script type="text/javascript">
+	$("#login").click(
+		function () {
+	        $("#error").show();
+		}
+	);
+</script>

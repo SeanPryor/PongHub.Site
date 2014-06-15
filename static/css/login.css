@@ -27,3 +27,11 @@ input{
 	float: right;
 	color: #999999;
 }
+.login_error {
+	color: #ed1c24;
+	font-family: LatoLight, sans-serif;
+	font-size: 14px;
+	float: left;
+	margin-top: 5px;
+	display: none;
+}
