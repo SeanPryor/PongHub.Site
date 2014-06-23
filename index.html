@@ -151,14 +151,26 @@
 		<h1><center>
 			A HISTORY
 		</center></h1>
+		<div class="table">
+		</div>
 		<h4>
-			The PongHub team set out to create the simplest yet most effective system for tracking ones stats throughout a game, which would provide a decisive and indisputable rank amongst friends; thus removing the unnecessary and disruptive arguments from the table where only sweat, blood and beer belong.
+			The idea for PongHub was born out of necessity, in a dimly-lit garage over a handmade table, in order to settle tiresome and heated debates between brethren about who is the best pong player in the house.
 		</h4>
-		<a href="about.html">
-			<h2>
+		<div id="read_more" class="read_more"><h2>
 			Read More
-		</h4>
-		</a>
+		</h2></div>
+		<div id="about_more" class="about_more">
+			<h4>
+				The PongHub team set out to create the most simpleand yet effective system for tracking ones stats throughout a game. This would provide a decisive and indisputable rank amongst friends; thus removing the unnecessary and disruptive arguments from the table where only sweat, blood and beer belong.<br /><br />
+
+Through extensive research (read drinking) the overly dedicated PongHub team has devised the necessary algorithm and encased it in a simple yet effective interface that will minimize user input, keeping the focus on the game. In order to keep app interaction to a minimum, the game had to be broken down to its bare elements; creating a system that gauges player ability on the most fundamental pong skill sets. The goal has always been to maintain the sanctitude of the game and so it is paramount that stats tracking not be a distraction during game play. PongHub has achieved this goal and will become an indispensable tool for any circle of friends that enjoy an extra level of competition.<br /><br />
+
+While still in its early stages PongHub is fully functional for the most played party game in the world. The PongHub team will continue to work tirelessly to improve the playing experience for all users. We would appreciate any comments and suggestions from our users, and look forward to working with a community that shares the same passion for the game.<br /><br />
+
+Sink or Drink,<br />
+Your friendly neighborhood development team.
+			</h4>
+		</div>
 	</div>
 	<br /><br />
 	<div class="footer_container">
@@ -316,6 +328,14 @@
 	        $("#phone").addClass("award");
 	        $(".copy_hide").hide();
 	        $("#award_copy").show();
+		}
+	);
+</script>
+
+<script type="text/javascript">
+	$("#read_more").click(
+		function () {
+	        $("#about_more").toggle();
 		}
 	);
 </script>

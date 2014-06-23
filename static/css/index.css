@@ -310,6 +310,18 @@ a {
 .aboutd {
 	background-image: url(../images/divider_about.png);
 }
+.table {
+	background-image: url(../images/table.png);
+	height: 200px;
+	width: 100%;
+	background-position: -200px -250px;
+}
+.read_more {
+	cursor: pointer;
+}
+.about_more {
+	display: none;
+}
 
 /* Footer */
 
