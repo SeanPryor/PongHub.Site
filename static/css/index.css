@@ -297,12 +297,15 @@ a {
 .stored {
 	background-image: url(../images/divider_store.png);
 }
-.store_placeholder {
-	height:222px;
-	width:649px;
+.spreadshirt {
+	width:700px;
 	margin:0 auto;
-	background-image: url(../images/store_soon.png);
-	background-position: 0px 0;
+}
+.boxl {
+	margin-right: 60px;
+}
+.shirt {
+	margin-right: 100px;
 }
 
 /* Section 5 */
