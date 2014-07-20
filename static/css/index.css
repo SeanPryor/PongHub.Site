@@ -35,6 +35,9 @@ a {
 	color: #ffffff;
 	text-decoration: none;
 }
+.links:hover {
+	border-bottom: 1px solid #95c68d;
+}
 
 /* Font Families */
 
