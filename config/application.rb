@@ -32,5 +32,19 @@ module Homepage
     config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
     Rails.application.config.assets.precompile += [ '*.css' ]
 
+    if !Rails.env.development? && !Rails.env.test?
+      # Disable Rails's static asset server
+      # In production, Apache or nginx will already do this
+      config.serve_static_assets = true
+      config.assets.compile = true
+      config.assets.compress = true
+      config.assets.digest = true
+      config.assets.enabled = true
+      config.fail_silently = true
+      config.assets.version = '1.0.0'
+      config.assets.js_compressor  = :uglifier
+      config.assets.css_compressor = :yui
+    end
+
   end
 end
