@@ -1,0 +1,57 @@
+<% content_for :stylesheets do %>
+  <%= stylesheet_link_tag 'sessions/index' %>
+<% end %>
+
+<div class="splash_container">
+  <div class="container">
+    <div id="logo" class="logo">
+    </div>
+    <div class="signup_container">
+      <%= link_to 'sessions/new' do %>
+        <div class="btn_white" style="margin-right:90px;">LOGIN</div>
+      <% end %>
+      <div id="register" class="btn_white">REGISTER</div>
+      <div id="asterick" class="asterick">*</div>
+      <br />
+      <div class="notification">
+        <span id="asterick1">*</span>
+        Not currently accepting new users, but we will be soon!
+      </div>
+    </div>
+  </div>
+
+  <% sections = [ :team, :app, :store, :about ] %>
+
+  <div class="pong_container">
+    <div class="container">
+      <% sections.each do |section| %>
+        <a href="#<%= section %>">
+          <div id="<%= section %>_cup" class="pong_balls <%= section %>"></div>
+        </a>
+      <% end%>
+    </div>
+    <div class="cup_container">
+      <% sections.each_with_index do |section, index| %>
+        <% klass = "#{index == 0 ? "" : "#{section}_cup"} cup_top" %>
+        <div id="<%= section %>_cup_top" class="<%= klass %>"></div>
+      <% end %>
+    </div>
+  </div>
+  <div class="cup_container_bottom">
+    <% sections.each_with_index do |section, index| %>
+      <% klass = "#{index == 0 ? "" : "#{section}_cup"} cup_bottom" %>
+      <div>
+        <div id="<%= section %>_cup_bottom" class="<%= klass %>"></div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<%= render partial: 'sessions/index/team' %>
+<%= render partial: 'sessions/index/app' %>
+<%= render partial: 'sessions/index/store' %>
+<%= render partial: 'sessions/index/about' %>
+
+<% content_for :footer do %>
+  <%= render partial: 'sessions/index/scripts' %>
+<% end %>
