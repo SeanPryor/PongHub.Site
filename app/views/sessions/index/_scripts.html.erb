@@ -1,0 +1,139 @@
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $('a[href^="#"]').click(function(e) {
+      e.preventDefault();
+      var target = this.hash, $target = $(target);
+      $('html, body').stop().animate({
+        'scrollTop': $target.offset().top
+      }, 1000, 'swing', function() {
+        window.location.hash = target;
+      });
+    });
+  });
+
+  $("#register").mouseenter(
+    function () {
+      $(this).animate({'marginRight':'20px'}, 50).animate({'marginRight':'0px'}, 50).animate({'marginRight':'20px'}, 50).animate({'marginRight':'10px'}, 50);
+      $("#asterick").css("color","#f7941e");
+      $("#asterick1").css("color","#f7941e");
+    }
+  );
+
+  $("#register").mouseleave(
+    function () {
+      $("#asterick").css("color","#ffffff");
+      $("#asterick1").css("color","#ffffff");
+    }
+  );
+
+  function cupShowHide() {
+    var cuptop = this.id
+    cuptop += '_top';
+    var cupbottom = this.id
+    cupbottom += '_bottom';
+
+    $(".cup_top").hide();
+    $(".cup_bottom").hide();
+    $('#'+cuptop).fadeIn();
+    $('#'+cupbottom).fadeIn();
+  }
+  $("#team_cup").mouseenter(cupShowHide);
+  $("#app_cup").mouseenter(cupShowHide);
+  $("#store_cup").mouseenter(cupShowHide);
+  $("#about_cup").mouseenter(cupShowHide);
+
+  function cupClick() {
+    $(this).animate({'marginTop': '100px'}, 500).delay(500).animate({'marginTop': '0px'}, 500);
+  }
+  $("#team_cup").click(cupClick);
+  $("#app_cup").click(cupClick);
+  $("#store_cup").click(cupClick);
+  $("#about_cup").click(cupClick);
+
+  $("#team_cup").hover(
+    function () {
+      $(this).animate({'marginTop': '-20px'}, 100);
+    },
+    function () {
+      $(this).animate({'marginTop': '0px'}, 500);
+    }
+  );
+  $("#app_cup").hover(
+    function () {
+      $(this).animate({'marginTop': '-20px'}, 100);
+    },
+    function () {
+      $(this).animate({'marginTop': '0px'}, 500);
+    }
+  );
+  $("#store_cup").hover(
+    function () {
+      $(this).animate({'marginTop': '-20px'}, 100);
+    },
+    function () {
+      $(this).animate({'marginTop': '0px'}, 500);
+    }
+  );
+  $("#about_cup").hover(
+    function () {
+      $(this).animate({'marginTop': '-20px'}, 100);
+    },
+    function () {
+      $(this).animate({'marginTop': '0px'}, 500);
+    }
+  );
+
+  function aboutShow() {
+    var name = this.id
+    name += '_name';
+    var about = this.id
+    about += '_about';
+
+    $(".about_text").hide();
+    $(".about_name").css("color","#95c68d");
+    $('#'+about).show();
+    $('#'+name).css("color","#000000");
+  }
+  $("#sean").mouseenter(aboutShow);
+  $("#daniel").mouseenter(aboutShow);
+  $("#guru").mouseenter(aboutShow);
+
+  $("#dot_one").click(
+    function () {
+      $(".dots").removeClass("selected");
+      $(this).addClass("selected");
+      $("#phone").removeClass("compare award stats");
+      $("#phone").addClass("stats");
+      $(".copy_hide").hide();
+      $("#stat_copy").show();
+    }
+  );
+  $("#dot_two").click(
+    function () {
+      $(".dots").removeClass("selected");
+      $(this).addClass("selected");
+      $("#phone").removeClass("compare award stats");
+      $("#phone").addClass("compare");
+      $(".copy_hide").hide();
+      $("#compare_copy").show();
+    }
+  );
+  $("#dot_three").click(
+    function () {
+      $(".dots").removeClass("selected");
+      $(this).addClass("selected");
+      $("#phone").removeClass("compare award stats");
+      $("#phone").addClass("award");
+      $(".copy_hide").hide();
+      $("#award_copy").show();
+    }
+  );
+
+  $("#read_more").click(
+    function () {
+      $("#about_more").toggle();
+    }
+  );
+
+</script>

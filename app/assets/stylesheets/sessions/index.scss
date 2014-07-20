@@ -1,0 +1,338 @@
+/* Main */
+html {
+  background-color: #f5f2d0;
+}
+body {
+  font-size: 20px;
+  padding: 0px;
+  margin: 0px;
+}
+h1 {
+  font-family: Lato, sans-serif;
+  font-size: 25px;
+  color: #95c68d;
+}
+h2 {
+  font-family: Lato, sans-serif;
+  font-size: 18px;
+  color: #95c68d;
+}
+h3 {
+  font-family: LatoLight, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+h4 {
+  font-family: LatoLight, sans-serif;
+  font-size: 14px;
+}
+h5 {
+  font-family: LatoLight, sans-serif;
+  font-size: 20px;
+  color:#ffffff;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Font Families */
+
+@font-face {
+  font-family: 'LatoLight';
+  src: font-url('Lato-Light.eot'); /* IE9 Compat Modes */
+  src: font-url('Lato-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  font-url('Lato-Light.woff') format('woff'), /* Modern Browsers */
+  font-url('Lato-Light.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: 'Lato';
+  src: font-url('Lato-Bold.eot'); /* IE9 Compat Modes */
+  src: font-url('Lato-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  font-url('Lato-Bold.woff') format('woff'), /* Modern Browsers */
+  font-url('Lato-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+
+/* Containers */
+
+.container {
+  margin:0px auto;
+  width: 600px;
+}
+
+.splash_container {
+  padding-top:100px;
+  height: 457px;
+  background-color: #95c68d;
+}
+
+.signup_container {
+  margin-top:50px;
+}
+
+.pong_container {
+  margin-top: 80px;
+  height:120px;
+  background-color: #bedab6;
+  padding-top:30px;
+}
+
+.cup_container {
+  margin:0px auto;
+  margin-top:68px;
+  width: 720px;
+}
+.cup_container_bottom {
+  margin:0px auto;
+  width: 720px;
+}
+.section_container {
+  margin:0px auto;
+  width: 600px;
+  margin-top:30px;
+  clear: both;
+}
+.footer_container {
+  height: 120px;
+  background-color: #000000;
+}
+
+/* Logos */
+
+.logo {
+  height: 90px;
+  width: 422px;
+  margin:0px auto;
+  background-image: image-url('logo_large.png');
+}
+.logo_med {
+  height: 48px;
+  width: 228px;
+  background-image: image-url('logo_med.png');
+  float: left;
+  margin: 40px 0 0 30px;
+}
+.logo_sm {
+  height: 32px;
+  width: 150px;
+  background-image: image-url('logo_small.png');
+  float: left;
+  margin: 30px 0 0 30px;
+}
+
+/* Buttons/Misc */
+
+.btn_white {
+  width: 132px;
+  padding: 3px 0 5px 10px;
+  background-image: image-url('btn_white.png');
+  color: #95c68d;
+  font-family: LatoLight, sans-serif;
+  float: right;
+  margin:0 10px 0 10px;
+  cursor: pointer;
+}
+
+.btn_white:hover {
+  background-position: 0 -32px;
+}
+.divider {
+  height:82px;
+  width: 809px;
+  margin:0 auto;
+  clear: both;
+  margin-top: 50px;
+}
+
+/* Section 1 */
+
+.asterick {
+  color: #ffffff;
+  font-family: Lato, sans-serif;
+  font-size: 45px;
+  float: right;
+}
+
+.notification {
+  color: #ffffff;
+  font-family: LatoLight, sans-serif;
+  font-size: 12px;
+  float: right;
+  clear:both;
+  margin:-10px 120px 0 0;
+}
+
+.pong_balls {
+  height:82px;
+  width:83px;
+  margin-right:89px;
+  background-image: image-url('pong_balls.png');
+  float: left;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.app {
+  background-position: -82px 0;
+}
+.store {
+  background-position: -165px 0;
+}
+.about {
+  background-position: -248px 0;
+  margin-right:0px;
+}
+
+.cup_top {
+  height:52px;
+  width:205px;
+  display: none;
+  background-image: image-url('cup_top.png');
+  z-index: 1;
+}
+.cup_bottom {
+  height:64px;
+  width:205px;
+  display: none;
+  background-image: image-url('cup_bottom.png');
+  z-index: 10;
+  position: relative;
+}
+.app_cup {
+  margin-left: 170px;
+}
+.store_cup {
+  margin-left: 340px;
+}
+.about_cup {
+  margin-left: 520px;
+}
+
+/* Section 2 */
+
+.teamd {
+  background-image: image-url('divider_team.png');
+}
+
+.photos {
+  height: 136px;
+  width: 136px;
+  background-image: image-url('team_photos.png');
+  margin: 30px 96px 0 0;
+  float: left;
+}
+
+.daniel {
+  background-position: -136px 0;
+}
+
+.guru {
+  background-position: -272px 0;
+  margin-right: 0px;
+}
+
+.sean:hover { background-position: 0 -136px;}
+.daniel:hover { background-position: -136px -136px;}
+.guru:hover { background-position: -272px -136px;}
+
+.about_name {
+  margin-right: 115px;
+}
+
+.about_text {
+  display: none;
+}
+
+/* Section 3 */
+
+.appd {
+  background-image: image-url('divider_app.png');
+}
+
+.phone {
+  height: 333px;
+  width: 194px;
+  float: left;
+}
+.stats {
+  background-image: image-url('phone_stats.png');
+}
+.compare {
+  background-image: image-url('phone_compare.png');
+}
+.award {
+  background-image: image-url('phone_award.png');
+}
+.app_copy {
+  float:left;
+  margin-left: 20px;
+}
+.appstore_soon {
+  width:161px;
+  height: 73px;
+  background-image: image-url('appstore_button_soon.png');
+  float: left;
+  margin-top:50px;
+}
+.dots {
+  height: 20px;
+  width: 20px;
+  margin: 10px 10px 0 0;
+  background-image: image-url('dots.png');
+  float: left;
+  cursor: pointer;
+}
+.selected {
+  background-position: -23px 0;
+}
+
+/* Section 4 */
+
+.stored {
+  background-image: image-url('divider_store.png');
+}
+.spreadshirt {
+  width:700px;
+  margin:0 auto;
+}
+.boxl {
+  margin-right: 60px;
+}
+.shirt {
+  margin-right: 100px;
+}
+
+/* Section 5 */
+
+.aboutd {
+  background-image: image-url('divider_about.png');
+}
+.table {
+  background-image: image-url('table.png');
+  height: 200px;
+  width: 100%;
+  background-position: -200px -250px;
+}
+.read_more {
+  cursor: pointer;
+}
+.about_more {
+  display: none;
+}
+
+/* Footer */
+
+.footer_links {
+  float: right;
+  margin:20px 30px 0 0;
+}
+.links_spacing {
+  margin: 0 10px 0 10px;
+  cursor: pointer;
+}

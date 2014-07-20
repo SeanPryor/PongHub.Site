@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= @title %></title>
+    <%= javascript_include_tag 'application' %>
+    <%= favicon_link_tag 'favicon.ico' %>
+    <%= csrf_meta_tags %>
+    <%= yield :stylesheets %>
+  </head>
+
+  <body>
+    <span id="anchor_top"></span>
+    <%= yield %>
+    <%= render partial: '/footer' %>
+  </body>
+
+  <footer>
+    <%= yield :footer %>
+    <%= render partial: '/analytics' %>
+  </footer>
+</html>

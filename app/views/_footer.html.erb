@@ -1,0 +1,20 @@
+<div class="footer_container">
+  <a href="#anchor_top">
+    <div class="logo_med"></div>
+  </a>
+  <div class="footer_links">
+    <h5>
+      <% unless params[:controller] == "sessions" && params[:action] == "new" %>
+        <%= link_to 'LOGIN', 'sessions/new', class: 'links_spacing' %>
+        //
+      <% end %>
+      <a class="links_spacing" style="color:#666666">
+        <strike>REGISTER</strike>
+      </a>
+      //
+      <%= link_to 'STORE', STORE_URL, class: 'links_spacing' %>
+      //
+      <%= link_to 'FACEBOOK', FACEBOOK_URL, class: 'links_spacing' %>
+    </h5>
+  </div>
+</div>
