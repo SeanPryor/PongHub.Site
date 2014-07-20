@@ -16,8 +16,13 @@ gem 'jquery-rails'
 # background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
-# Use unicorn as the app server
-gem 'unicorn', '~> 4.8.3'
+# heroku specific gems
+group :production do
+  # Heroku web server
+  gem 'unicorn', '~> 4.8.3'
+  # Add better Heroku support
+  gem 'rails_12factor', '0.0.2'
+end
 
 group :development do
   gem 'powder'
